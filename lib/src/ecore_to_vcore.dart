@@ -81,120 +81,12 @@ class Foo {
     }
   }
 
-//  Classifier _processClassifier(XmlElement classifierElement) {
-//    print('_processClassifier(${classifierElement.getAttribute('name')})');
-//    final xsiType = _getXsiType(classifierElement);
-////    print(xsiType);
-//
-//    switch (xsiType) {
-//      case 'ecore:EClass':
-//        return processEClass(classifierElement);
-//
-//      default:
-//        print('TODO: $xsiType');
-//        return null;
-//    }
-//
-////    classifierElement.children.forEach(print);
-//  }
-//
-//  ValueClass processEClass(XmlElement classElement) {
-//    print('processEClass(${classElement.getAttribute('name')})');
-//    final builder = new ValueClassBuilder();
-//    final eSuperTypeName = classElement.getAttribute("eSuperTypes");
-//
-//    final superClass = _resolveSuperClass(eSuperTypeName);
-//    if (superClass != null) {
-//      builder.superTypes.add(superClass);
-//    }
-//
-//    builder.name = classElement.getAttribute('name');
-//    _classifierHelpers[builder.name].resolvingClassifier = builder;
-//
-//    builder.properties.addAll(classElement
-//        .findElements("eStructuralFeatures")
-//        .map(processEStructuralFeature));
-//
-//    final valueClass = builder.build();
-//    print('built: $valueClass');
-//
-//    return valueClass;
-//  }
-//
-//  ValuableClass _resolveSuperClass(String eSuperTypeName) =>
-//      _assertClass(_resolveType(eSuperTypeName));
-//
-//  Classifier _resolveType(String eTypeName) {
-//    print('_resolveType($eTypeName)');
-//    if (eTypeName != null) {
-//      if (!eTypeName.startsWith("#//")) {
-//        throw new StateError('TODO: unsupported ecore url type for $eTypeName');
-//      } else {
-//        final typeName = eTypeName.substring("#//".length);
-//        final Classifier classifier = _lookupClassifier(typeName);
-//        if (classifier == null) {
-//          throw new StateError("failed to resolve classifier class: $typeName");
-//        } else {
-//          return classifier;
-//        }
-//      }
-//    } else {
-//      return null;
-//    }
-//  }
-//
-////  ValuableClass _lookupClass(String className) =>
-////      _assertClass(_lookupClassifier(className));
-//
-//  ValuableClass _assertClass(Classifier resolvedClassifier) {
-//    if (resolvedClassifier != null) {
-//      if (resolvedClassifier is! ValuableClass) {
-//        throw new StateError(
-//            "unexpected type for super class: $resolvedClassifier");
-//      }
-//    }
-//    return resolvedClassifier;
-//  }
-//
-//  Classifier _lookupClassifier(String classifierName) {
-//    print('_lookupClassifier($classifierName)');
-//    final resolvedClassifier = _resolvedClassifiers[classifierName];
-//    if (resolvedClassifier != null) {
-//      return resolvedClassifier;
-//    }
-//
-//    final superElement = _classifierElements[classifierName];
-//    if (superElement == null) {
-//      print(_classifierElements.keys);
-//      throw new StateError("unknow classifier: $classifierName");
-//    } else {
-//      return _processClassifier(superElement);
-//    }
-//  }
-//
-//  Property processEStructuralFeature(XmlElement structuralElement) {
-//    print('processEStructuralFeature: $structuralElement');
-////  <eStructuralFeatures xsi:type="ecore:EAttribute" name="iD" eType="#//EBoolean"/>
-////    final xsiType = _getXsiType(structuralElement);
-//    final eTypeName = structuralElement.getAttribute("eType");
-//    final classifier = _resolveType(eTypeName);
-//    if (classifier == null) {
-//      throw new StateError("No type for structuralElement $structuralElement");
-//    }
-//
-//    return new Property((PropertyBuilder b) => b
-//      ..name = structuralElement.getAttribute("name")
-//      ..type = classifier);
-//  }
 }
 
 main() async {
   return new Foo().foo();
 }
 
-//class ECoreUriResolver {
-//
-//}
 
 abstract class _ResolvingClassifierHelper<V extends Classifier<V, B>,
     B extends ClassifierBuilder<V, B>> {
