@@ -1,0 +1,60 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// 2016-04-30T07:40:15.897835Z
+
+part of serializers;
+
+// **************************************************************************
+// Generator: BuiltJsonGenerator
+// Target: library serializers
+// **************************************************************************
+
+Serializers _$serializers = (new Serializers().toBuilder()
+      ..add(EAttribute.serializer)
+      ..add(EAnnotation.serializer)
+      ..add(EClass.serializer)
+      ..add(EDataType.serializer)
+      ..add(EEnum.serializer)
+      ..add(EEnumLiteral.serializer)
+      ..add(EFactory.serializer)
+      ..add(EObject.serializer)
+      ..add(EOperation.serializer)
+      ..add(EPackage.serializer)
+      ..add(EParameter.serializer)
+      ..add(EReference.serializer)
+      ..add(EBigDecimal.serializer)
+      ..add(EBigInteger.serializer)
+      ..add(EBoolean.serializer)
+      ..add(EBooleanObject.serializer)
+      ..add(EByte.serializer)
+      ..add(EByteArray.serializer)
+      ..add(EByteObject.serializer)
+      ..add(EChar.serializer)
+      ..add(ECharacterObject.serializer)
+      ..add(EDate.serializer)
+      ..add(EDiagnosticChain.serializer)
+      ..add(EDouble.serializer)
+      ..add(EDoubleObject.serializer)
+      ..add(EEList.serializer)
+      ..add(EEnumerator.serializer)
+      ..add(EFeatureMap.serializer)
+      ..add(EFeatureMapEntry.serializer)
+      ..add(EFloat.serializer)
+      ..add(EFloatObject.serializer)
+      ..add(EInt.serializer)
+      ..add(EIntegerObject.serializer)
+      ..add(EJavaClass.serializer)
+      ..add(EJavaObject.serializer)
+      ..add(ELong.serializer)
+      ..add(ELongObject.serializer)
+      ..add(EMap.serializer)
+      ..add(EResource.serializer)
+      ..add(EResourceSet.serializer)
+      ..add(EShort.serializer)
+      ..add(EShortObject.serializer)
+      ..add(EString.serializer)
+      ..add(EStringToStringMapEntry.serializer)
+      ..add(ETreeIterator.serializer)
+      ..add(EGenericType.serializer)
+      ..add(ETypeParameter.serializer)
+      ..add(EInvocationTargetException.serializer))
+    .build();
