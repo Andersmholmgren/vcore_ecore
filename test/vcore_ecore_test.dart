@@ -9,12 +9,13 @@ void main() {
 
 
     test('First Test', () {
-      new EClass((EClassBuilder b) => b
+      print(vCoreModelPackage.classifiers.map((c) => c.name));
+//      new EClass((EClassBuilder b) => b
       // fail
 //        ..abstract = new EBoolean((EBooleanBuilder bb) => bb.)
 
 //      ..eAttributes.eAttributeType.
-      );
+//      );
     });
   });
 }
