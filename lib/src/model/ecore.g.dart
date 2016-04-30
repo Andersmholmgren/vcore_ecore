@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-04-30T07:03:31.418608Z
+// 2016-04-30T07:34:35.218703Z
 
 part of ecore;
 
@@ -2298,13 +2298,6 @@ class _$EInvocationTargetExceptionSerializer
     return result.build();
   }
 }
-
-// **************************************************************************
-// Generator: VCoreModelGenerator
-// Target: library ecore
-// **************************************************************************
-
-// Error: Bad state: failed to resolve classifier helper class: Object
 
 // **************************************************************************
 // Generator: BuiltValueGenerator
