@@ -6,14 +6,15 @@ import 'package:test/test.dart';
 
 void main() {
   group('A group of tests', () {
-    Awesome awesome;
 
-    setUp(() {
-      awesome = new Awesome();
-    });
 
     test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
+      new EClass((EClassBuilder b) => b
+      // fail
+//        ..abstract = new EBoolean((EBooleanBuilder bb) => bb.)
+
+//      ..eAttributes.eAttributeType.
+      );
     });
   });
 }

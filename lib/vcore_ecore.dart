@@ -6,6 +6,7 @@
 /// More dartdocs go here.
 library vcore_ecore;
 
-export 'src/vcore_ecore_base.dart';
+export 'src/model/ecore.dart';
+
 
 // TODO: Export any libraries intended for clients of this package.
