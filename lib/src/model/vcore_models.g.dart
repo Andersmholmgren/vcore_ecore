@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-05-01T00:18:41.038273Z
+// 2016-05-01T00:20:11.862540Z
 
 part of vCoreModelPackage;
 
@@ -12,7 +12,7 @@ Package get _$vCoreModelPackage => _ecorePackage ??= _createecorePackage();
 Package _ecorePackage;
 
 Package _createecorePackage() {
-  final packageBuilder = new PackageBuilder()..name = ecore;
+  final packageBuilder = new PackageBuilder()..name = 'ecore';
   packageBuilder.classifiers
     ..add(EAttribute)
     ..add(EAnnotation)
