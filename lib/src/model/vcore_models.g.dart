@@ -73,12 +73,15 @@ Package _createecorePackage() {
 ValueClass _EAttribute;
 ValueClass get EAttribute => _EAttribute ??= _createEAttribute();
 
-ValueClass _createEAttribute() {
-  return new ValueClass((cb) => cb
+ValueClassBuilder __eAttributeBuilder;
+ValueClassBuilder get _eAttributeBuilder => __eAttributeBuilder ??= _createEAttributeBuilder();
+
+ValueClassBuilder _createEAttributeBuilder() {
+  return new ValueClassBuilder()
     ..name = 'EAttribute'
     ..isAbstract = false
     ..superTypes.addAll(
-        [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
+      [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
     ..properties.add(new Property((b) => b
       ..name = 'iD'
       ..type = EBoolean
@@ -92,8 +95,10 @@ ValueClass _createEAttribute() {
       ..isNullable = false
       ..derivedExpression = null
       ..docComment = null
-      ..defaultValue = null)));
+      ..defaultValue = null));
 }
+
+ValueClass _createEAttribute() => _eAttributeBuilder.build();
 
 ValueClass _EAnnotation;
 ValueClass get EAnnotation => _EAnnotation ??= _createEAnnotation();
