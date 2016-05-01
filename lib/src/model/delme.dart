@@ -1,87 +1,62 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // 2016-05-01T00:20:11.862540Z
 
-part of vCoreModelPackage;
+import 'package:vcore/vcore.dart';
 
-// **************************************************************************
-// Generator: VCoreModelGenerator
-// Target: library vCoreModelPackage
-// **************************************************************************
+fo() {
+  final valueBuilders = [
+    new ValueClassBuilder()
+      ..name = 'EAttribute'
+      ..isAbstract = false
+  ];
 
-Package get _$vCoreModelPackage => _ecorePackage ??= _createecorePackage();
-Package _ecorePackage;
+  final builderMap = new Map<String, ClassifierBuilder>.fromIterable(
+      valueBuilders,
+      key: (vb) => vb.name);
 
-Package _createecorePackage() {
-  final packageBuilder = new PackageBuilder()..name = 'ecore';
-  packageBuilder.classifiers
-    ..add(EAttribute)
-    ..add(EAnnotation)
-    ..add(EClass)
-    ..add(EClassifier)
-    ..add(EDataType)
-    ..add(EEnum)
-    ..add(EEnumLiteral)
-    ..add(EFactory)
-    ..add(EModelElement)
-    ..add(ENamedElement)
-    ..add(EObject)
-    ..add(EOperation)
-    ..add(EPackage)
-    ..add(EParameter)
-    ..add(EReference)
-    ..add(EStructuralFeature)
-    ..add(ETypedElement)
-    ..add(EBigDecimal)
-    ..add(EBigInteger)
-    ..add(EBoolean)
-    ..add(EBooleanObject)
-    ..add(EByte)
-    ..add(EByteArray)
-    ..add(EByteObject)
-    ..add(EChar)
-    ..add(ECharacterObject)
-    ..add(EDate)
-    ..add(EDiagnosticChain)
-    ..add(EDouble)
-    ..add(EDoubleObject)
-    ..add(EEList)
-    ..add(EEnumerator)
-    ..add(EFeatureMap)
-    ..add(EFeatureMapEntry)
-    ..add(EFloat)
-    ..add(EFloatObject)
-    ..add(EInt)
-    ..add(EIntegerObject)
-    ..add(EJavaClass)
-    ..add(EJavaObject)
-    ..add(ELong)
-    ..add(ELongObject)
-    ..add(EMap)
-    ..add(EResource)
-    ..add(EResourceSet)
-    ..add(EShort)
-    ..add(EShortObject)
-    ..add(EString)
-    ..add(EStringToStringMapEntry)
-    ..add(ETreeIterator)
-    ..add(EGenericType)
-    ..add(ETypeParameter)
-    ..add(EInvocationTargetException);
-  return packageBuilder.build();
+  new X()
+    ..createBuilder = '''
+    new ValueClassBuilder()
+    ..name = 'EAttribute'
+    ..isAbstract = false'''
+    ..createProperties = '''
+    PropertyBuilder()
+      ..name = 'iD'
+      ..type = lookup('EBoolean')
+      ..isNullable = false
+      ..derivedExpression = null
+      ..docComment = null
+      ..defaultValue = null),
+    PropertyBuilder()
+      ..name = 'eAttributeType'
+      ..type = lookup('EDataType')
+      ..isNullable = false
+      ..derivedExpression = null
+      ..docComment = null
+      ..defaultValue = null)
+  '''
+    ..createSuperTypes = '''
+    'EStructuralFeature'
+  '''
+  ;
 }
 
-ValueClass _EAttribute;
-ValueClass get EAttribute => _EAttribute ??= _createEAttribute();
+blah(Iterable<X> x) {
 
-ValueClassBuilder __eAttributeBuilder;
-ValueClassBuilder get _eAttributeBuilder => __eAttributeBuilder ??= _createEAttributeBuilder();
+}
+
+class X {
+  String createBuilder;
+  String createSuperTypes;
+  String createProperties;
+}
 
 ValueClassBuilder _createEAttributeBuilder() {
   return new ValueClassBuilder()
     ..name = 'EAttribute'
     ..isAbstract = false
     ..superTypes.addAll(
-      [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
+        [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
     ..properties.add(new Property((b) => b
       ..name = 'iD'
       ..type = EBoolean
