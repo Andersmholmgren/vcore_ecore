@@ -37,7 +37,6 @@ class Foo {
     final classifiers =
         _classifierHelpers.values.map((h) => h.resolvedClassifier);
 
-
     final package = new Package((b) => b
       ..name = 'ecore'
       ..classifiers.addAll(classifiers));
@@ -80,13 +79,11 @@ class Foo {
       return null;
     }
   }
-
 }
 
 main() async {
   return new Foo().foo();
 }
-
 
 abstract class _ResolvingClassifierHelper<V extends Classifier<V, B>,
     B extends ClassifierBuilder<V, B>> {
@@ -144,7 +141,7 @@ class _ResolvingValueClassHelper
   void processFlat(_ResolvingClassifierHelper lookup(String name)) {
     print('processFlat($name)');
     resolvingClassifier.isAbstract =
-    (classifierElement.getAttribute('abstract') ?? 'false') == 'true';
+        (classifierElement.getAttribute('abstract') ?? 'false') == 'true';
   }
 
   void processGraph(_ResolvingClassifierHelper lookup(String name)) {
@@ -193,6 +190,11 @@ class _ResolvingValueClassHelper
     print('processEStructuralFeature: $structuralElement');
 //  <eStructuralFeatures xsi:type="ecore:EAttribute" name="iD" eType="#//EBoolean"/>
 //    final xsiType = _getXsiType(structuralElement);
+    final upperBound = structuralElement.getAttribute('upperBound') ?? 1;
+    final unique = structuralElement.getAttribute('unique') ?? false;
+    final bool isCollection =
+        upperBound == -1 || upperBound > 1; // -1 for unbounded
+    final bool isSet = unique && isCollection;
     final eTypeName = structuralElement.getAttribute("eType");
     final classifierBuilder = lookup(eTypeName)?.resolvingClassifier;
     if (classifierBuilder == null) {
@@ -201,10 +203,37 @@ class _ResolvingValueClassHelper
 //      throw new StateError("No type for structuralElement $structuralElement");
     }
 
+    var typeBuilder = classifierBuilder;
+
+
+    if (isCollection) {
+      if (isSet) {
+        typeBuilder = _createBuiltSet(classifierBuilder.build());
+      }
+      else {
+        typeBuilder = _createBuiltList(classifierBuilder.build());
+      }
+    }
+
     return new PropertyBuilder()
       ..name = structuralElement.getAttribute("name")
-      ..type = classifierBuilder;
+      ..type = typeBuilder;
   }
+}
+
+// TODO: a dupe from vcore metamodel
+GenericTypeBuilder _createBuiltSet(Classifier genericParameter) {
+  return new GenericTypeBuilder()
+    ..base = builtSet
+    ..name = 'BuiltSet<${genericParameter.name}>'
+    ..genericTypeValues[builtSet.genericTypes.first] = genericParameter;
+}
+
+GenericType _createBuiltList(Classifier genericParameter) {
+  return new GenericType((cb) => cb
+    ..base = builtList
+    ..name = 'BuiltList<${genericParameter.name}>'
+    ..genericTypeValues[builtList.genericTypes.first] = genericParameter);
 }
 
 class _ResolvingExternalClassHelper
