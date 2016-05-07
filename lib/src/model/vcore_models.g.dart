@@ -8,8 +8,25 @@ part of vCoreModelPackage;
 // Target: library vCoreModelPackage
 // **************************************************************************
 
+// TODO: this is handwritten. What is the nicest way to expose the known meta
+// model members?
+//class EcorePackage2 implements Package {
+//  final Package _realPackage;
+//
+//  String get docComment => _realPackage.docComment;
+//  String get name => _realPackage.name;
+//  BuiltSet<Classifier> get classifiers => _realPackage.classifiers;
+//
+//  ValueClass get EAttribute =>
+//      _realPackage.classifiers.firstWhere((c) => c.name == 'EAttribute');
+//}
+
 Package get _$vCoreModelPackage => _ecorePackage ??= _createEcorePackage();
 Package _ecorePackage;
+
+ValueClass _EAttribute;
+ValueClass get EAttribute => _EAttribute ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EAttribute');
 
 Package _createEcorePackage() {
   final packageBuilder = new PackageBuilder()..name = 'ecore';
