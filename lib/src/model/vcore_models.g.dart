@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-05-07T03:26:59.228925Z
+// 2016-05-07T03:49:28.245293Z
 
 part of vCoreModelPackage;
 
@@ -1315,6 +1315,113 @@ ValueClass _$reflectVClass(Type type) => _$reflectClassifier(type);
 
 Map<Type, Classifier> _buildTypeMap() {
   final typeMap = <Type, Classifier>{};
+
+  typeMap[source_package.EAttribute] = EAttribute;
+
+  typeMap[source_package.EAnnotation] = EAnnotation;
+
   typeMap[source_package.EClass] = EClass;
+
+  typeMap[source_package.EClassifier] = EClassifier;
+
+  typeMap[source_package.EDataType] = EDataType;
+
+  typeMap[source_package.EEnum] = EEnum;
+
+  typeMap[source_package.EEnumLiteral] = EEnumLiteral;
+
+  typeMap[source_package.EFactory] = EFactory;
+
+  typeMap[source_package.EModelElement] = EModelElement;
+
+  typeMap[source_package.ENamedElement] = ENamedElement;
+
+  typeMap[source_package.EObject] = EObject;
+
+  typeMap[source_package.EOperation] = EOperation;
+
+  typeMap[source_package.EPackage] = EPackage;
+
+  typeMap[source_package.EParameter] = EParameter;
+
+  typeMap[source_package.EReference] = EReference;
+
+  typeMap[source_package.EStructuralFeature] = EStructuralFeature;
+
+  typeMap[source_package.ETypedElement] = ETypedElement;
+
+  typeMap[source_package.EBigDecimal] = EBigDecimal;
+
+  typeMap[source_package.EBigInteger] = EBigInteger;
+
+  typeMap[source_package.EBoolean] = EBoolean;
+
+  typeMap[source_package.EBooleanObject] = EBooleanObject;
+
+  typeMap[source_package.EByte] = EByte;
+
+  typeMap[source_package.EByteArray] = EByteArray;
+
+  typeMap[source_package.EByteObject] = EByteObject;
+
+  typeMap[source_package.EChar] = EChar;
+
+  typeMap[source_package.ECharacterObject] = ECharacterObject;
+
+  typeMap[source_package.EDate] = EDate;
+
+  typeMap[source_package.EDiagnosticChain] = EDiagnosticChain;
+
+  typeMap[source_package.EDouble] = EDouble;
+
+  typeMap[source_package.EDoubleObject] = EDoubleObject;
+
+  typeMap[source_package.EEList] = EEList;
+
+  typeMap[source_package.EEnumerator] = EEnumerator;
+
+  typeMap[source_package.EFeatureMap] = EFeatureMap;
+
+  typeMap[source_package.EFeatureMapEntry] = EFeatureMapEntry;
+
+  typeMap[source_package.EFloat] = EFloat;
+
+  typeMap[source_package.EFloatObject] = EFloatObject;
+
+  typeMap[source_package.EInt] = EInt;
+
+  typeMap[source_package.EIntegerObject] = EIntegerObject;
+
+  typeMap[source_package.EJavaClass] = EJavaClass;
+
+  typeMap[source_package.EJavaObject] = EJavaObject;
+
+  typeMap[source_package.ELong] = ELong;
+
+  typeMap[source_package.ELongObject] = ELongObject;
+
+  typeMap[source_package.EMap] = EMap;
+
+  typeMap[source_package.EResource] = EResource;
+
+  typeMap[source_package.EResourceSet] = EResourceSet;
+
+  typeMap[source_package.EShort] = EShort;
+
+  typeMap[source_package.EShortObject] = EShortObject;
+
+  typeMap[source_package.EString] = EString;
+
+  typeMap[source_package.EStringToStringMapEntry] = EStringToStringMapEntry;
+
+  typeMap[source_package.ETreeIterator] = ETreeIterator;
+
+  typeMap[source_package.EGenericType] = EGenericType;
+
+  typeMap[source_package.ETypeParameter] = ETypeParameter;
+
+  typeMap[source_package.EInvocationTargetException] =
+      EInvocationTargetException;
+
   return typeMap;
 }
