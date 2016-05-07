@@ -1306,3 +1306,15 @@ ValueClass _EInvocationTargetException;
 ValueClass get EInvocationTargetException =>
     _EInvocationTargetException ??= _$vCoreModelPackage.classifiers
         .firstWhere((c) => c.name == 'EInvocationTargetException');
+
+Map<Type, Classifier> __typeMap;
+Map<Type, Classifier> get _typeMap => __typeMap ??= _buildTypeMap();
+
+Classifier _$reflectClassifier(Type type) => _typeMap[type];
+ValueClass _$reflectVClass(Type type) => _$reflectClassifier(type);
+
+Map<Type, Classifier> _buildTypeMap() {
+  final typeMap = <Type, Classifier>{};
+  typeMap[source_package.EClass] = EClass;
+  return typeMap;
+}
