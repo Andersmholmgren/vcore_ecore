@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-05-07T02:28:45.197807Z
+// 2016-05-07T02:31:10.499110Z
 
 part of vCoreModelPackage;
 
@@ -992,37 +992,37 @@ Package _createEcorePackage() {
     ..docComment = null
     ..defaultValue = null);
 
-  eAttributeBuilder.properties.add(eStructuralFeatureBuilder);
+  eAttributeBuilder.superTypes.add(eStructuralFeatureBuilder);
 
-  eAnnotationBuilder.properties.add(eModelElement);
+  eAnnotationBuilder.superTypes.add(eModelElementBuilder);
 
-  eClassBuilder.properties.add(eClassifier);
+  eClassBuilder.superTypes.add(eClassifierBuilder);
 
-  eClassifierBuilder.properties.add(eNamedElement);
+  eClassifierBuilder.superTypes.add(eNamedElementBuilder);
 
-  eDataTypeBuilder.properties.add(eClassifier);
+  eDataTypeBuilder.superTypes.add(eClassifierBuilder);
 
-  eEnumBuilder.properties.add(eDataType);
+  eEnumBuilder.superTypes.add(eDataTypeBuilder);
 
-  eEnumLiteralBuilder.properties.add(eNamedElement);
+  eEnumLiteralBuilder.superTypes.add(eNamedElementBuilder);
 
-  eFactoryBuilder.properties.add(eModelElement);
+  eFactoryBuilder.superTypes.add(eModelElementBuilder);
 
-  eNamedElementBuilder.properties.add(eModelElement);
+  eNamedElementBuilder.superTypes.add(eModelElementBuilder);
 
-  eOperationBuilder.properties.add(eTypedElement);
+  eOperationBuilder.superTypes.add(eTypedElementBuilder);
 
-  ePackageBuilder.properties.add(eNamedElement);
+  ePackageBuilder.superTypes.add(eNamedElementBuilder);
 
-  eParameterBuilder.properties.add(eTypedElement);
+  eParameterBuilder.superTypes.add(eTypedElementBuilder);
 
-  eReferenceBuilder.properties.add(eStructuralFeature);
+  eReferenceBuilder.superTypes.add(eStructuralFeatureBuilder);
 
-  eStructuralFeatureBuilder.properties.add(eTypedElement);
+  eStructuralFeatureBuilder.superTypes.add(eTypedElementBuilder);
 
-  eTypedElementBuilder.properties.add(eNamedElement);
+  eTypedElementBuilder.superTypes.add(eNamedElementBuilder);
 
-  eTypeParameterBuilder.properties.add(eNamedElement);
+  eTypeParameterBuilder.superTypes.add(eNamedElementBuilder);
 
   packageBuilder.classifiers
     ..add(eAttributeBuilder.build())
