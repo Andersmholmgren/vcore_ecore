@@ -65,14 +65,14 @@ abstract class EClass implements Built<EClass, EClassBuilder>, EClassifier {
   EOperation get eOperations;
   EAttribute get eAllAttributes;
   EReference get eAllReferences;
-  EReference get eReferences;
-  EAttribute get eAttributes;
+  BuiltSet<EReference> get eReferences;
+  BuiltSet<EAttribute> get eAttributes;
   EReference get eAllContainments;
   EOperation get eAllOperations;
   EStructuralFeature get eAllStructuralFeatures;
   EClass get eAllSuperTypes;
   EAttribute get eIDAttribute;
-  EStructuralFeature get eStructuralFeatures;
+  BuiltSet<EStructuralFeature> get eStructuralFeatures;
   EGenericType get eGenericSuperTypes;
   EGenericType get eAllGenericSuperTypes;
 
