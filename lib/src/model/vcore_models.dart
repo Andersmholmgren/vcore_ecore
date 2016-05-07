@@ -1,9 +1,8 @@
 library vCoreModelPackage;
 
-import 'ecore.dart' as source_package;
 import 'package:vcore/vcore.dart';
-import 'dart:convert';
-import 'package:built_collection/built_collection.dart';
+
+import 'ecore.dart' as source_package;
 
 part 'vcore_models.g.dart';
 
