@@ -4,9 +4,6 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library vcore_ecore;
+library vcore_ecore_meta;
 
-export 'src/model/ecore.dart';
-export 'src/model/serializers.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/model/vcore_models.dart';
