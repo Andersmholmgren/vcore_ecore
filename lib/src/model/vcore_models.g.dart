@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-05-01T00:20:11.862540Z
+// 2016-05-07T02:28:45.197807Z
 
 part of vCoreModelPackage;
 
@@ -8,1272 +8,1075 @@ part of vCoreModelPackage;
 // Target: library vCoreModelPackage
 // **************************************************************************
 
-Package get _$vCoreModelPackage => _ecorePackage ??= _createecorePackage();
+Package get _$vCoreModelPackage => _ecorePackage ??= _createEcorePackage();
 Package _ecorePackage;
 
-Package _createecorePackage() {
+Package _createEcorePackage() {
   final packageBuilder = new PackageBuilder()..name = 'ecore';
+
+//  final Map<String, ClassifierBuilder> _builders = new Map<String, ClassifierBuilder>();
+
+//  ClassifierBuilder lookup(String name) => _builders[name];
+
+  final ValueClassBuilder eAttributeBuilder = new ValueClassBuilder()
+    ..name = 'EAttributeBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eAnnotationBuilder = new ValueClassBuilder()
+    ..name = 'EAnnotationBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eClassBuilder = new ValueClassBuilder()
+    ..name = 'EClassBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eClassifierBuilder = new ValueClassBuilder()
+    ..name = 'EClassifierBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eDataTypeBuilder = new ValueClassBuilder()
+    ..name = 'EDataTypeBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eEnumBuilder = new ValueClassBuilder()
+    ..name = 'EEnumBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eEnumLiteralBuilder = new ValueClassBuilder()
+    ..name = 'EEnumLiteralBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eFactoryBuilder = new ValueClassBuilder()
+    ..name = 'EFactoryBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eModelElementBuilder = new ValueClassBuilder()
+    ..name = 'EModelElementBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eNamedElementBuilder = new ValueClassBuilder()
+    ..name = 'ENamedElementBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eObjectBuilder = new ValueClassBuilder()
+    ..name = 'EObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eOperationBuilder = new ValueClassBuilder()
+    ..name = 'EOperationBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder ePackageBuilder = new ValueClassBuilder()
+    ..name = 'EPackageBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eParameterBuilder = new ValueClassBuilder()
+    ..name = 'EParameterBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eReferenceBuilder = new ValueClassBuilder()
+    ..name = 'EReferenceBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eStructuralFeatureBuilder = new ValueClassBuilder()
+    ..name = 'EStructuralFeatureBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eTypedElementBuilder = new ValueClassBuilder()
+    ..name = 'ETypedElementBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eBigDecimalBuilder = new ValueClassBuilder()
+    ..name = 'EBigDecimalBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eBigIntegerBuilder = new ValueClassBuilder()
+    ..name = 'EBigIntegerBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eBooleanBuilder = new ValueClassBuilder()
+    ..name = 'EBooleanBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eBooleanObjectBuilder = new ValueClassBuilder()
+    ..name = 'EBooleanObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eByteBuilder = new ValueClassBuilder()
+    ..name = 'EByteBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eByteArrayBuilder = new ValueClassBuilder()
+    ..name = 'EByteArrayBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eByteObjectBuilder = new ValueClassBuilder()
+    ..name = 'EByteObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eCharBuilder = new ValueClassBuilder()
+    ..name = 'ECharBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eCharacterObjectBuilder = new ValueClassBuilder()
+    ..name = 'ECharacterObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eDateBuilder = new ValueClassBuilder()
+    ..name = 'EDateBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eDiagnosticChainBuilder = new ValueClassBuilder()
+    ..name = 'EDiagnosticChainBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eDoubleBuilder = new ValueClassBuilder()
+    ..name = 'EDoubleBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eDoubleObjectBuilder = new ValueClassBuilder()
+    ..name = 'EDoubleObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eEListBuilder = new ValueClassBuilder()
+    ..name = 'EEListBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eEnumeratorBuilder = new ValueClassBuilder()
+    ..name = 'EEnumeratorBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eFeatureMapBuilder = new ValueClassBuilder()
+    ..name = 'EFeatureMapBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eFeatureMapEntryBuilder = new ValueClassBuilder()
+    ..name = 'EFeatureMapEntryBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eFloatBuilder = new ValueClassBuilder()
+    ..name = 'EFloatBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eFloatObjectBuilder = new ValueClassBuilder()
+    ..name = 'EFloatObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eIntBuilder = new ValueClassBuilder()
+    ..name = 'EIntBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eIntegerObjectBuilder = new ValueClassBuilder()
+    ..name = 'EIntegerObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eJavaClassBuilder = new ValueClassBuilder()
+    ..name = 'EJavaClassBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eJavaObjectBuilder = new ValueClassBuilder()
+    ..name = 'EJavaObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eLongBuilder = new ValueClassBuilder()
+    ..name = 'ELongBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eLongObjectBuilder = new ValueClassBuilder()
+    ..name = 'ELongObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eMapBuilder = new ValueClassBuilder()
+    ..name = 'EMapBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eResourceBuilder = new ValueClassBuilder()
+    ..name = 'EResourceBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eResourceSetBuilder = new ValueClassBuilder()
+    ..name = 'EResourceSetBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eShortBuilder = new ValueClassBuilder()
+    ..name = 'EShortBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eShortObjectBuilder = new ValueClassBuilder()
+    ..name = 'EShortObjectBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eStringBuilder = new ValueClassBuilder()
+    ..name = 'EStringBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eStringToStringMapEntryBuilder =
+      new ValueClassBuilder()
+        ..name = 'EStringToStringMapEntryBuilder'
+        ..isAbstract = false;
+
+  final ValueClassBuilder eTreeIteratorBuilder = new ValueClassBuilder()
+    ..name = 'ETreeIteratorBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eGenericTypeBuilder = new ValueClassBuilder()
+    ..name = 'EGenericTypeBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eTypeParameterBuilder = new ValueClassBuilder()
+    ..name = 'ETypeParameterBuilder'
+    ..isAbstract = false;
+
+  final ValueClassBuilder eInvocationTargetExceptionBuilder =
+      new ValueClassBuilder()
+        ..name = 'EInvocationTargetExceptionBuilder'
+        ..isAbstract = false;
+
+  eAttributeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'iD'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAttributeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAttributeType'
+    ..type = eDataTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAnnotationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'source'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAnnotationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'details'
+    ..type = eStringToStringMapEntryBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAnnotationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eModelElement'
+    ..type = eModelElementBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAnnotationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'contents'
+    ..type = eObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAnnotationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'references'
+    ..type = eObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'abstract'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'interface'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eSuperTypes'
+    ..type = eClassBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eOperations'
+    ..type = eOperationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllAttributes'
+    ..type = eAttributeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllReferences'
+    ..type = eReferenceBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eReferences'
+    ..type = eReferenceBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAttributes'
+    ..type = eAttributeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllContainments'
+    ..type = eReferenceBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllOperations'
+    ..type = eOperationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllStructuralFeatures'
+    ..type = eStructuralFeatureBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllSuperTypes'
+    ..type = eClassBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eIDAttribute'
+    ..type = eAttributeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eStructuralFeatures'
+    ..type = eStructuralFeatureBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eGenericSuperTypes'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAllGenericSuperTypes'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassifierBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceClassName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassifierBuilder.properties.add(new PropertyBuilder()
+    ..name = 'defaultValue'
+    ..type = eJavaObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassifierBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceTypeName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassifierBuilder.properties.add(new PropertyBuilder()
+    ..name = 'ePackage'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eClassifierBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeParameters'
+    ..type = eTypeParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceClassName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'defaultValue'
+    ..type = eJavaObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceTypeName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'ePackage'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeParameters'
+    ..type = eTypeParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eDataTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'serializable'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceClassName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'defaultValue'
+    ..type = eJavaObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instanceTypeName'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'ePackage'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeParameters'
+    ..type = eTypeParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'serializable'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eLiterals'
+    ..type = eEnumLiteralBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumLiteralBuilder.properties.add(new PropertyBuilder()
+    ..name = 'value'
+    ..type = eIntBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumLiteralBuilder.properties.add(new PropertyBuilder()
+    ..name = 'instance'
+    ..type = eEnumeratorBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumLiteralBuilder.properties.add(new PropertyBuilder()
+    ..name = 'literal'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eEnumLiteralBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eEnum'
+    ..type = eEnumBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eFactoryBuilder.properties.add(new PropertyBuilder()
+    ..name = 'ePackage'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eModelElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAnnotations'
+    ..type = eAnnotationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eNamedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'name'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eOperationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eContainingClass'
+    ..type = eClassBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eOperationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeParameters'
+    ..type = eTypeParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eOperationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eParameters'
+    ..type = eParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eOperationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eExceptions'
+    ..type = eClassifierBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eOperationBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eGenericExceptions'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAnnotations'
+    ..type = eAnnotationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'name'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'nsURI'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'nsPrefix'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eFactoryInstance'
+    ..type = eFactoryBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eClassifiers'
+    ..type = eClassifierBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eSubpackages'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  ePackageBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eSuperPackage'
+    ..type = ePackageBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eParameterBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eOperation'
+    ..type = eOperationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'containment'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'container'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'resolveProxies'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eOpposite'
+    ..type = eReferenceBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eReferenceType'
+    ..type = eClassBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eReferenceBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eKeys'
+    ..type = eAttributeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'changeable'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'volatile'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'transient'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'defaultValueLiteral'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'defaultValue'
+    ..type = eJavaObjectBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'unsettable'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'derived'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStructuralFeatureBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eContainingClass'
+    ..type = eClassBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'ordered'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'unique'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'lowerBound'
+    ..type = eIntBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'upperBound'
+    ..type = eIntBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'many'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'required'
+    ..type = eBooleanBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eType'
+    ..type = eClassifierBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypedElementBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eGenericType'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStringToStringMapEntryBuilder.properties.add(new PropertyBuilder()
+    ..name = 'key'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eStringToStringMapEntryBuilder.properties.add(new PropertyBuilder()
+    ..name = 'value'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eUpperBound'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeArguments'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eRawType'
+    ..type = eClassifierBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eLowerBound'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eTypeParameter'
+    ..type = eTypeParameterBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eGenericTypeBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eClassifier'
+    ..type = eClassifierBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypeParameterBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eAnnotations'
+    ..type = eAnnotationBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypeParameterBuilder.properties.add(new PropertyBuilder()
+    ..name = 'name'
+    ..type = eStringBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eTypeParameterBuilder.properties.add(new PropertyBuilder()
+    ..name = 'eBounds'
+    ..type = eGenericTypeBuilder
+    ..isNullable = false
+    ..derivedExpression = null
+    ..docComment = null
+    ..defaultValue = null);
+
+  eAttributeBuilder.properties.add(eStructuralFeatureBuilder);
+
+  eAnnotationBuilder.properties.add(eModelElement);
+
+  eClassBuilder.properties.add(eClassifier);
+
+  eClassifierBuilder.properties.add(eNamedElement);
+
+  eDataTypeBuilder.properties.add(eClassifier);
+
+  eEnumBuilder.properties.add(eDataType);
+
+  eEnumLiteralBuilder.properties.add(eNamedElement);
+
+  eFactoryBuilder.properties.add(eModelElement);
+
+  eNamedElementBuilder.properties.add(eModelElement);
+
+  eOperationBuilder.properties.add(eTypedElement);
+
+  ePackageBuilder.properties.add(eNamedElement);
+
+  eParameterBuilder.properties.add(eTypedElement);
+
+  eReferenceBuilder.properties.add(eStructuralFeature);
+
+  eStructuralFeatureBuilder.properties.add(eTypedElement);
+
+  eTypedElementBuilder.properties.add(eNamedElement);
+
+  eTypeParameterBuilder.properties.add(eNamedElement);
+
   packageBuilder.classifiers
-    ..add(EAttribute)
-    ..add(EAnnotation)
-    ..add(EClass)
-    ..add(EClassifier)
-    ..add(EDataType)
-    ..add(EEnum)
-    ..add(EEnumLiteral)
-    ..add(EFactory)
-    ..add(EModelElement)
-    ..add(ENamedElement)
-    ..add(EObject)
-    ..add(EOperation)
-    ..add(EPackage)
-    ..add(EParameter)
-    ..add(EReference)
-    ..add(EStructuralFeature)
-    ..add(ETypedElement)
-    ..add(EBigDecimal)
-    ..add(EBigInteger)
-    ..add(EBoolean)
-    ..add(EBooleanObject)
-    ..add(EByte)
-    ..add(EByteArray)
-    ..add(EByteObject)
-    ..add(EChar)
-    ..add(ECharacterObject)
-    ..add(EDate)
-    ..add(EDiagnosticChain)
-    ..add(EDouble)
-    ..add(EDoubleObject)
-    ..add(EEList)
-    ..add(EEnumerator)
-    ..add(EFeatureMap)
-    ..add(EFeatureMapEntry)
-    ..add(EFloat)
-    ..add(EFloatObject)
-    ..add(EInt)
-    ..add(EIntegerObject)
-    ..add(EJavaClass)
-    ..add(EJavaObject)
-    ..add(ELong)
-    ..add(ELongObject)
-    ..add(EMap)
-    ..add(EResource)
-    ..add(EResourceSet)
-    ..add(EShort)
-    ..add(EShortObject)
-    ..add(EString)
-    ..add(EStringToStringMapEntry)
-    ..add(ETreeIterator)
-    ..add(EGenericType)
-    ..add(ETypeParameter)
-    ..add(EInvocationTargetException);
+    ..add(eAttributeBuilder.build())
+    ..add(eAnnotationBuilder.build())
+    ..add(eClassBuilder.build())
+    ..add(eClassifierBuilder.build())
+    ..add(eDataTypeBuilder.build())
+    ..add(eEnumBuilder.build())
+    ..add(eEnumLiteralBuilder.build())
+    ..add(eFactoryBuilder.build())
+    ..add(eModelElementBuilder.build())
+    ..add(eNamedElementBuilder.build())
+    ..add(eObjectBuilder.build())
+    ..add(eOperationBuilder.build())
+    ..add(ePackageBuilder.build())
+    ..add(eParameterBuilder.build())
+    ..add(eReferenceBuilder.build())
+    ..add(eStructuralFeatureBuilder.build())
+    ..add(eTypedElementBuilder.build())
+    ..add(eBigDecimalBuilder.build())
+    ..add(eBigIntegerBuilder.build())
+    ..add(eBooleanBuilder.build())
+    ..add(eBooleanObjectBuilder.build())
+    ..add(eByteBuilder.build())
+    ..add(eByteArrayBuilder.build())
+    ..add(eByteObjectBuilder.build())
+    ..add(eCharBuilder.build())
+    ..add(eCharacterObjectBuilder.build())
+    ..add(eDateBuilder.build())
+    ..add(eDiagnosticChainBuilder.build())
+    ..add(eDoubleBuilder.build())
+    ..add(eDoubleObjectBuilder.build())
+    ..add(eEListBuilder.build())
+    ..add(eEnumeratorBuilder.build())
+    ..add(eFeatureMapBuilder.build())
+    ..add(eFeatureMapEntryBuilder.build())
+    ..add(eFloatBuilder.build())
+    ..add(eFloatObjectBuilder.build())
+    ..add(eIntBuilder.build())
+    ..add(eIntegerObjectBuilder.build())
+    ..add(eJavaClassBuilder.build())
+    ..add(eJavaObjectBuilder.build())
+    ..add(eLongBuilder.build())
+    ..add(eLongObjectBuilder.build())
+    ..add(eMapBuilder.build())
+    ..add(eResourceBuilder.build())
+    ..add(eResourceSetBuilder.build())
+    ..add(eShortBuilder.build())
+    ..add(eShortObjectBuilder.build())
+    ..add(eStringBuilder.build())
+    ..add(eStringToStringMapEntryBuilder.build())
+    ..add(eTreeIteratorBuilder.build())
+    ..add(eGenericTypeBuilder.build())
+    ..add(eTypeParameterBuilder.build())
+    ..add(eInvocationTargetExceptionBuilder.build());
   return packageBuilder.build();
-}
-
-ValueClass _EAttribute;
-ValueClass get EAttribute => _EAttribute ??= _createEAttribute();
-
-ValueClassBuilder __eAttributeBuilder;
-ValueClassBuilder get _eAttributeBuilder => __eAttributeBuilder ??= _createEAttributeBuilder();
-
-ValueClassBuilder _createEAttributeBuilder() {
-  return new ValueClassBuilder()
-    ..name = 'EAttribute'
-    ..isAbstract = false
-    ..superTypes.addAll(
-      [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'iD'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAttributeType'
-      ..type = EDataType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null));
-}
-
-ValueClass _createEAttribute() => _eAttributeBuilder.build();
-
-ValueClass _EAnnotation;
-ValueClass get EAnnotation => _EAnnotation ??= _createEAnnotation();
-
-ValueClass _createEAnnotation() {
-  return new ValueClass((cb) => cb
-    ..name = 'EAnnotation'
-    ..isAbstract = false
-    ..superTypes.addAll([EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'source'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'details'
-      ..type = EStringToStringMapEntry
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eModelElement'
-      ..type = EModelElement
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'contents'
-      ..type = EObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'references'
-      ..type = EObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EClass;
-ValueClass get EClass => _EClass ??= _createEClass();
-
-ValueClass _createEClass() {
-  return new ValueClass((cb) => cb
-    ..name = 'EClass'
-    ..isAbstract = false
-    ..superTypes.addAll([EClassifier, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'abstract'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'interface'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eSuperTypes'
-      ..type = EClass
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eOperations'
-      ..type = EOperation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllAttributes'
-      ..type = EAttribute
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllReferences'
-      ..type = EReference
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eReferences'
-      ..type = EReference
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAttributes'
-      ..type = EAttribute
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllContainments'
-      ..type = EReference
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllOperations'
-      ..type = EOperation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllStructuralFeatures'
-      ..type = EStructuralFeature
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllSuperTypes'
-      ..type = EClass
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eIDAttribute'
-      ..type = EAttribute
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eStructuralFeatures'
-      ..type = EStructuralFeature
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eGenericSuperTypes'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eAllGenericSuperTypes'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EClassifier;
-ValueClass get EClassifier => _EClassifier ??= _createEClassifier();
-
-ValueClass _createEClassifier() {
-  return new ValueClass((cb) => cb
-    ..name = 'EClassifier'
-    ..isAbstract = false
-    ..superTypes.addAll([ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceClassName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'defaultValue'
-      ..type = EJavaObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceTypeName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'ePackage'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeParameters'
-      ..type = ETypeParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EDataType;
-ValueClass get EDataType => _EDataType ??= _createEDataType();
-
-ValueClass _createEDataType() {
-  return new ValueClass((cb) => cb
-    ..name = 'EDataType'
-    ..isAbstract = false
-    ..superTypes.addAll([EClassifier, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceClassName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'defaultValue'
-      ..type = EJavaObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceTypeName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'ePackage'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeParameters'
-      ..type = ETypeParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'serializable'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EEnum;
-ValueClass get EEnum => _EEnum ??= _createEEnum();
-
-ValueClass _createEEnum() {
-  return new ValueClass((cb) => cb
-    ..name = 'EEnum'
-    ..isAbstract = false
-    ..superTypes.addAll([EDataType, EClassifier, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceClassName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'defaultValue'
-      ..type = EJavaObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'instanceTypeName'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'ePackage'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeParameters'
-      ..type = ETypeParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'serializable'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eLiterals'
-      ..type = EEnumLiteral
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EEnumLiteral;
-ValueClass get EEnumLiteral => _EEnumLiteral ??= _createEEnumLiteral();
-
-ValueClass _createEEnumLiteral() {
-  return new ValueClass((cb) => cb
-    ..name = 'EEnumLiteral'
-    ..isAbstract = false
-    ..superTypes.addAll([ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'value'
-      ..type = EInt
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'instance'
-      ..type = EEnumerator
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'literal'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eEnum'
-      ..type = EEnum
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EFactory;
-ValueClass get EFactory => _EFactory ??= _createEFactory();
-
-ValueClass _createEFactory() {
-  return new ValueClass((cb) => cb
-    ..name = 'EFactory'
-    ..isAbstract = false
-    ..superTypes.addAll([EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'ePackage'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EModelElement;
-ValueClass get EModelElement => _EModelElement ??= _createEModelElement();
-
-ValueClass _createEModelElement() {
-  return new ValueClass((cb) => cb
-    ..name = 'EModelElement'
-    ..isAbstract = false
-    ..superTypes.addAll([])
-    ..properties.add(new Property((b) => b
-      ..name = 'eAnnotations'
-      ..type = EAnnotation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _ENamedElement;
-ValueClass get ENamedElement => _ENamedElement ??= _createENamedElement();
-
-ValueClass _createENamedElement() {
-  return new ValueClass((cb) => cb
-    ..name = 'ENamedElement'
-    ..isAbstract = false
-    ..superTypes.addAll([EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'name'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EObject;
-ValueClass get EObject => _EObject ??= _createEObject();
-
-ValueClass _createEObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EOperation;
-ValueClass get EOperation => _EOperation ??= _createEOperation();
-
-ValueClass _createEOperation() {
-  return new ValueClass((cb) => cb
-    ..name = 'EOperation'
-    ..isAbstract = false
-    ..superTypes.addAll([ETypedElement, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'eContainingClass'
-      ..type = EClass
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeParameters'
-      ..type = ETypeParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eParameters'
-      ..type = EParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eExceptions'
-      ..type = EClassifier
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eGenericExceptions'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EPackage;
-ValueClass get EPackage => _EPackage ??= _createEPackage();
-
-ValueClass _createEPackage() {
-  return new ValueClass((cb) => cb
-    ..name = 'EPackage'
-    ..isAbstract = false
-    ..superTypes.addAll([ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'eAnnotations'
-      ..type = EAnnotation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'name'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'nsURI'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'nsPrefix'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eFactoryInstance'
-      ..type = EFactory
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eClassifiers'
-      ..type = EClassifier
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eSubpackages'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eSuperPackage'
-      ..type = EPackage
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EParameter;
-ValueClass get EParameter => _EParameter ??= _createEParameter();
-
-ValueClass _createEParameter() {
-  return new ValueClass((cb) => cb
-    ..name = 'EParameter'
-    ..isAbstract = false
-    ..superTypes.addAll([ETypedElement, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'eOperation'
-      ..type = EOperation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EReference;
-ValueClass get EReference => _EReference ??= _createEReference();
-
-ValueClass _createEReference() {
-  return new ValueClass((cb) => cb
-    ..name = 'EReference'
-    ..isAbstract = false
-    ..superTypes.addAll(
-        [EStructuralFeature, ETypedElement, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'containment'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'container'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'resolveProxies'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eOpposite'
-      ..type = EReference
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eReferenceType'
-      ..type = EClass
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eKeys'
-      ..type = EAttribute
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EStructuralFeature;
-ValueClass get EStructuralFeature =>
-    _EStructuralFeature ??= _createEStructuralFeature();
-
-ValueClass _createEStructuralFeature() {
-  return new ValueClass((cb) => cb
-    ..name = 'EStructuralFeature'
-    ..isAbstract = false
-    ..superTypes.addAll([ETypedElement, ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'changeable'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'volatile'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'transient'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'defaultValueLiteral'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'defaultValue'
-      ..type = EJavaObject
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'unsettable'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'derived'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eContainingClass'
-      ..type = EClass
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _ETypedElement;
-ValueClass get ETypedElement => _ETypedElement ??= _createETypedElement();
-
-ValueClass _createETypedElement() {
-  return new ValueClass((cb) => cb
-    ..name = 'ETypedElement'
-    ..isAbstract = false
-    ..superTypes.addAll([ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'ordered'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'unique'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'lowerBound'
-      ..type = EInt
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'upperBound'
-      ..type = EInt
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'many'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'required'
-      ..type = EBoolean
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eType'
-      ..type = EClassifier
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eGenericType'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EBigDecimal;
-ValueClass get EBigDecimal => _EBigDecimal ??= _createEBigDecimal();
-
-ValueClass _createEBigDecimal() {
-  return new ValueClass((cb) => cb
-    ..name = 'EBigDecimal'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EBigInteger;
-ValueClass get EBigInteger => _EBigInteger ??= _createEBigInteger();
-
-ValueClass _createEBigInteger() {
-  return new ValueClass((cb) => cb
-    ..name = 'EBigInteger'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EBoolean;
-ValueClass get EBoolean => _EBoolean ??= _createEBoolean();
-
-ValueClass _createEBoolean() {
-  return new ValueClass((cb) => cb
-    ..name = 'EBoolean'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EBooleanObject;
-ValueClass get EBooleanObject => _EBooleanObject ??= _createEBooleanObject();
-
-ValueClass _createEBooleanObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EBooleanObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EByte;
-ValueClass get EByte => _EByte ??= _createEByte();
-
-ValueClass _createEByte() {
-  return new ValueClass((cb) => cb
-    ..name = 'EByte'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EByteArray;
-ValueClass get EByteArray => _EByteArray ??= _createEByteArray();
-
-ValueClass _createEByteArray() {
-  return new ValueClass((cb) => cb
-    ..name = 'EByteArray'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EByteObject;
-ValueClass get EByteObject => _EByteObject ??= _createEByteObject();
-
-ValueClass _createEByteObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EByteObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EChar;
-ValueClass get EChar => _EChar ??= _createEChar();
-
-ValueClass _createEChar() {
-  return new ValueClass((cb) => cb
-    ..name = 'EChar'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _ECharacterObject;
-ValueClass get ECharacterObject =>
-    _ECharacterObject ??= _createECharacterObject();
-
-ValueClass _createECharacterObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'ECharacterObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EDate;
-ValueClass get EDate => _EDate ??= _createEDate();
-
-ValueClass _createEDate() {
-  return new ValueClass((cb) => cb
-    ..name = 'EDate'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EDiagnosticChain;
-ValueClass get EDiagnosticChain =>
-    _EDiagnosticChain ??= _createEDiagnosticChain();
-
-ValueClass _createEDiagnosticChain() {
-  return new ValueClass((cb) => cb
-    ..name = 'EDiagnosticChain'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EDouble;
-ValueClass get EDouble => _EDouble ??= _createEDouble();
-
-ValueClass _createEDouble() {
-  return new ValueClass((cb) => cb
-    ..name = 'EDouble'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EDoubleObject;
-ValueClass get EDoubleObject => _EDoubleObject ??= _createEDoubleObject();
-
-ValueClass _createEDoubleObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EDoubleObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EEList;
-ValueClass get EEList => _EEList ??= _createEEList();
-
-ValueClass _createEEList() {
-  return new ValueClass((cb) => cb
-    ..name = 'EEList'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EEnumerator;
-ValueClass get EEnumerator => _EEnumerator ??= _createEEnumerator();
-
-ValueClass _createEEnumerator() {
-  return new ValueClass((cb) => cb
-    ..name = 'EEnumerator'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EFeatureMap;
-ValueClass get EFeatureMap => _EFeatureMap ??= _createEFeatureMap();
-
-ValueClass _createEFeatureMap() {
-  return new ValueClass((cb) => cb
-    ..name = 'EFeatureMap'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EFeatureMapEntry;
-ValueClass get EFeatureMapEntry =>
-    _EFeatureMapEntry ??= _createEFeatureMapEntry();
-
-ValueClass _createEFeatureMapEntry() {
-  return new ValueClass((cb) => cb
-    ..name = 'EFeatureMapEntry'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EFloat;
-ValueClass get EFloat => _EFloat ??= _createEFloat();
-
-ValueClass _createEFloat() {
-  return new ValueClass((cb) => cb
-    ..name = 'EFloat'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EFloatObject;
-ValueClass get EFloatObject => _EFloatObject ??= _createEFloatObject();
-
-ValueClass _createEFloatObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EFloatObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EInt;
-ValueClass get EInt => _EInt ??= _createEInt();
-
-ValueClass _createEInt() {
-  return new ValueClass((cb) => cb
-    ..name = 'EInt'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EIntegerObject;
-ValueClass get EIntegerObject => _EIntegerObject ??= _createEIntegerObject();
-
-ValueClass _createEIntegerObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EIntegerObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EJavaClass;
-ValueClass get EJavaClass => _EJavaClass ??= _createEJavaClass();
-
-ValueClass _createEJavaClass() {
-  return new ValueClass((cb) => cb
-    ..name = 'EJavaClass'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EJavaObject;
-ValueClass get EJavaObject => _EJavaObject ??= _createEJavaObject();
-
-ValueClass _createEJavaObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EJavaObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _ELong;
-ValueClass get ELong => _ELong ??= _createELong();
-
-ValueClass _createELong() {
-  return new ValueClass((cb) => cb
-    ..name = 'ELong'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _ELongObject;
-ValueClass get ELongObject => _ELongObject ??= _createELongObject();
-
-ValueClass _createELongObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'ELongObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EMap;
-ValueClass get EMap => _EMap ??= _createEMap();
-
-ValueClass _createEMap() {
-  return new ValueClass((cb) => cb
-    ..name = 'EMap'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EResource;
-ValueClass get EResource => _EResource ??= _createEResource();
-
-ValueClass _createEResource() {
-  return new ValueClass((cb) => cb
-    ..name = 'EResource'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EResourceSet;
-ValueClass get EResourceSet => _EResourceSet ??= _createEResourceSet();
-
-ValueClass _createEResourceSet() {
-  return new ValueClass((cb) => cb
-    ..name = 'EResourceSet'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EShort;
-ValueClass get EShort => _EShort ??= _createEShort();
-
-ValueClass _createEShort() {
-  return new ValueClass((cb) => cb
-    ..name = 'EShort'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EShortObject;
-ValueClass get EShortObject => _EShortObject ??= _createEShortObject();
-
-ValueClass _createEShortObject() {
-  return new ValueClass((cb) => cb
-    ..name = 'EShortObject'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EString;
-ValueClass get EString => _EString ??= _createEString();
-
-ValueClass _createEString() {
-  return new ValueClass((cb) => cb
-    ..name = 'EString'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EStringToStringMapEntry;
-ValueClass get EStringToStringMapEntry =>
-    _EStringToStringMapEntry ??= _createEStringToStringMapEntry();
-
-ValueClass _createEStringToStringMapEntry() {
-  return new ValueClass((cb) => cb
-    ..name = 'EStringToStringMapEntry'
-    ..isAbstract = false
-    ..superTypes.addAll([])
-    ..properties.add(new Property((b) => b
-      ..name = 'key'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'value'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _ETreeIterator;
-ValueClass get ETreeIterator => _ETreeIterator ??= _createETreeIterator();
-
-ValueClass _createETreeIterator() {
-  return new ValueClass((cb) => cb
-    ..name = 'ETreeIterator'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
-}
-
-ValueClass _EGenericType;
-ValueClass get EGenericType => _EGenericType ??= _createEGenericType();
-
-ValueClass _createEGenericType() {
-  return new ValueClass((cb) => cb
-    ..name = 'EGenericType'
-    ..isAbstract = false
-    ..superTypes.addAll([])
-    ..properties.add(new Property((b) => b
-      ..name = 'eUpperBound'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeArguments'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eRawType'
-      ..type = EClassifier
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eLowerBound'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eTypeParameter'
-      ..type = ETypeParameter
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eClassifier'
-      ..type = EClassifier
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _ETypeParameter;
-ValueClass get ETypeParameter => _ETypeParameter ??= _createETypeParameter();
-
-ValueClass _createETypeParameter() {
-  return new ValueClass((cb) => cb
-    ..name = 'ETypeParameter'
-    ..isAbstract = false
-    ..superTypes.addAll([ENamedElement, EModelElement])
-    ..properties.add(new Property((b) => b
-      ..name = 'eAnnotations'
-      ..type = EAnnotation
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'name'
-      ..type = EString
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null))
-    ..properties.add(new Property((b) => b
-      ..name = 'eBounds'
-      ..type = EGenericType
-      ..isNullable = false
-      ..derivedExpression = null
-      ..docComment = null
-      ..defaultValue = null)));
-}
-
-ValueClass _EInvocationTargetException;
-ValueClass get EInvocationTargetException =>
-    _EInvocationTargetException ??= _createEInvocationTargetException();
-
-ValueClass _createEInvocationTargetException() {
-  return new ValueClass((cb) => cb
-    ..name = 'EInvocationTargetException'
-    ..isAbstract = false
-    ..superTypes.addAll([]));
 }
