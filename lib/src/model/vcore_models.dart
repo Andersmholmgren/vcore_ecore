@@ -8,4 +8,5 @@ part 'vcore_models.g.dart';
 
 Package vCoreModelPackage = _$vCoreModelPackage;
 
+Classifier reflectClassifier(Type type) => _$reflectClassifier(type);
 ValueClass reflectVClass(Type type) => _$reflectVClass(type);
