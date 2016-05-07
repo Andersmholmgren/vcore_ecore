@@ -190,8 +190,9 @@ class _ResolvingValueClassHelper
     print('processEStructuralFeature: $structuralElement');
 //  <eStructuralFeatures xsi:type="ecore:EAttribute" name="iD" eType="#//EBoolean"/>
 //    final xsiType = _getXsiType(structuralElement);
-    final upperBound = structuralElement.getAttribute('upperBound') ?? 1;
-    final unique = structuralElement.getAttribute('unique') ?? false;
+    final upperBound =
+        int.parse(structuralElement.getAttribute('upperBound') ?? "1");
+    final unique = structuralElement.getAttribute('unique') == "true";
     final bool isCollection =
         upperBound == -1 || upperBound > 1; // -1 for unbounded
     final bool isSet = unique && isCollection;
@@ -205,12 +206,10 @@ class _ResolvingValueClassHelper
 
     var typeBuilder = classifierBuilder;
 
-
     if (isCollection) {
       if (isSet) {
         typeBuilder = _createBuiltSet(classifierBuilder.build());
-      }
-      else {
+      } else {
         typeBuilder = _createBuiltList(classifierBuilder.build());
       }
     }
@@ -229,11 +228,11 @@ GenericTypeBuilder _createBuiltSet(Classifier genericParameter) {
     ..genericTypeValues[builtSet.genericTypes.first] = genericParameter;
 }
 
-GenericType _createBuiltList(Classifier genericParameter) {
-  return new GenericType((cb) => cb
+GenericTypeBuilder _createBuiltList(Classifier genericParameter) {
+  return new GenericTypeBuilder()
     ..base = builtList
     ..name = 'BuiltList<${genericParameter.name}>'
-    ..genericTypeValues[builtList.genericTypes.first] = genericParameter);
+    ..genericTypeValues[builtList.genericTypes.first] = genericParameter;
 }
 
 class _ResolvingExternalClassHelper
