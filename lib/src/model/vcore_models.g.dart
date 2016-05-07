@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2016-05-07T02:31:10.499110Z
+// 2016-05-07T03:26:59.228925Z
 
 part of vCoreModelPackage;
 
@@ -8,25 +8,8 @@ part of vCoreModelPackage;
 // Target: library vCoreModelPackage
 // **************************************************************************
 
-// TODO: this is handwritten. What is the nicest way to expose the known meta
-// model members?
-//class EcorePackage2 implements Package {
-//  final Package _realPackage;
-//
-//  String get docComment => _realPackage.docComment;
-//  String get name => _realPackage.name;
-//  BuiltSet<Classifier> get classifiers => _realPackage.classifiers;
-//
-//  ValueClass get EAttribute =>
-//      _realPackage.classifiers.firstWhere((c) => c.name == 'EAttribute');
-//}
-
 Package get _$vCoreModelPackage => _ecorePackage ??= _createEcorePackage();
 Package _ecorePackage;
-
-ValueClass _EAttribute;
-ValueClass get EAttribute => _EAttribute ??=
-    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EAttribute');
 
 Package _createEcorePackage() {
   final packageBuilder = new PackageBuilder()..name = 'ecore';
@@ -1097,3 +1080,229 @@ Package _createEcorePackage() {
     ..add(eInvocationTargetExceptionBuilder.build());
   return packageBuilder.build();
 }
+
+ValueClass _EAttribute;
+ValueClass get EAttribute => _EAttribute ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EAttribute');
+
+ValueClass _EAnnotation;
+ValueClass get EAnnotation => _EAnnotation ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EAnnotation');
+
+ValueClass _EClass;
+ValueClass get EClass => _EClass ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EClass');
+
+ValueClass _EClassifier;
+ValueClass get EClassifier => _EClassifier ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EClassifier');
+
+ValueClass _EDataType;
+ValueClass get EDataType => _EDataType ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EDataType');
+
+ValueClass _EEnum;
+ValueClass get EEnum => _EEnum ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EEnum');
+
+ValueClass _EEnumLiteral;
+ValueClass get EEnumLiteral => _EEnumLiteral ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EEnumLiteral');
+
+ValueClass _EFactory;
+ValueClass get EFactory => _EFactory ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EFactory');
+
+ValueClass _EModelElement;
+ValueClass get EModelElement =>
+    _EModelElement ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EModelElement');
+
+ValueClass _ENamedElement;
+ValueClass get ENamedElement =>
+    _ENamedElement ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'ENamedElement');
+
+ValueClass _EObject;
+ValueClass get EObject => _EObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EObject');
+
+ValueClass _EOperation;
+ValueClass get EOperation => _EOperation ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EOperation');
+
+ValueClass _EPackage;
+ValueClass get EPackage => _EPackage ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EPackage');
+
+ValueClass _EParameter;
+ValueClass get EParameter => _EParameter ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EParameter');
+
+ValueClass _EReference;
+ValueClass get EReference => _EReference ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EReference');
+
+ValueClass _EStructuralFeature;
+ValueClass get EStructuralFeature =>
+    _EStructuralFeature ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EStructuralFeature');
+
+ValueClass _ETypedElement;
+ValueClass get ETypedElement =>
+    _ETypedElement ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'ETypedElement');
+
+ValueClass _EBigDecimal;
+ValueClass get EBigDecimal => _EBigDecimal ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EBigDecimal');
+
+ValueClass _EBigInteger;
+ValueClass get EBigInteger => _EBigInteger ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EBigInteger');
+
+ValueClass _EBoolean;
+ValueClass get EBoolean => _EBoolean ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EBoolean');
+
+ValueClass _EBooleanObject;
+ValueClass get EBooleanObject =>
+    _EBooleanObject ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EBooleanObject');
+
+ValueClass _EByte;
+ValueClass get EByte => _EByte ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EByte');
+
+ValueClass _EByteArray;
+ValueClass get EByteArray => _EByteArray ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EByteArray');
+
+ValueClass _EByteObject;
+ValueClass get EByteObject => _EByteObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EByteObject');
+
+ValueClass _EChar;
+ValueClass get EChar => _EChar ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EChar');
+
+ValueClass _ECharacterObject;
+ValueClass get ECharacterObject =>
+    _ECharacterObject ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'ECharacterObject');
+
+ValueClass _EDate;
+ValueClass get EDate => _EDate ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EDate');
+
+ValueClass _EDiagnosticChain;
+ValueClass get EDiagnosticChain =>
+    _EDiagnosticChain ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EDiagnosticChain');
+
+ValueClass _EDouble;
+ValueClass get EDouble => _EDouble ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EDouble');
+
+ValueClass _EDoubleObject;
+ValueClass get EDoubleObject =>
+    _EDoubleObject ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EDoubleObject');
+
+ValueClass _EEList;
+ValueClass get EEList => _EEList ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EEList');
+
+ValueClass _EEnumerator;
+ValueClass get EEnumerator => _EEnumerator ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EEnumerator');
+
+ValueClass _EFeatureMap;
+ValueClass get EFeatureMap => _EFeatureMap ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EFeatureMap');
+
+ValueClass _EFeatureMapEntry;
+ValueClass get EFeatureMapEntry =>
+    _EFeatureMapEntry ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EFeatureMapEntry');
+
+ValueClass _EFloat;
+ValueClass get EFloat => _EFloat ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EFloat');
+
+ValueClass _EFloatObject;
+ValueClass get EFloatObject => _EFloatObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EFloatObject');
+
+ValueClass _EInt;
+ValueClass get EInt => _EInt ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EInt');
+
+ValueClass _EIntegerObject;
+ValueClass get EIntegerObject =>
+    _EIntegerObject ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EIntegerObject');
+
+ValueClass _EJavaClass;
+ValueClass get EJavaClass => _EJavaClass ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EJavaClass');
+
+ValueClass _EJavaObject;
+ValueClass get EJavaObject => _EJavaObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EJavaObject');
+
+ValueClass _ELong;
+ValueClass get ELong => _ELong ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'ELong');
+
+ValueClass _ELongObject;
+ValueClass get ELongObject => _ELongObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'ELongObject');
+
+ValueClass _EMap;
+ValueClass get EMap => _EMap ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EMap');
+
+ValueClass _EResource;
+ValueClass get EResource => _EResource ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EResource');
+
+ValueClass _EResourceSet;
+ValueClass get EResourceSet => _EResourceSet ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EResourceSet');
+
+ValueClass _EShort;
+ValueClass get EShort => _EShort ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EShort');
+
+ValueClass _EShortObject;
+ValueClass get EShortObject => _EShortObject ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EShortObject');
+
+ValueClass _EString;
+ValueClass get EString => _EString ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EString');
+
+ValueClass _EStringToStringMapEntry;
+ValueClass get EStringToStringMapEntry =>
+    _EStringToStringMapEntry ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EStringToStringMapEntry');
+
+ValueClass _ETreeIterator;
+ValueClass get ETreeIterator =>
+    _ETreeIterator ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'ETreeIterator');
+
+ValueClass _EGenericType;
+ValueClass get EGenericType => _EGenericType ??=
+    _$vCoreModelPackage.classifiers.firstWhere((c) => c.name == 'EGenericType');
+
+ValueClass _ETypeParameter;
+ValueClass get ETypeParameter =>
+    _ETypeParameter ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'ETypeParameter');
+
+ValueClass _EInvocationTargetException;
+ValueClass get EInvocationTargetException =>
+    _EInvocationTargetException ??= _$vCoreModelPackage.classifiers
+        .firstWhere((c) => c.name == 'EInvocationTargetException');
